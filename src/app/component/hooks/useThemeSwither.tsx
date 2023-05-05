@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 
 function UseThemeSwither() {
     const preferDarkQuery = ("prefer-color-scheme: dark")
-    const [mode, setMode] = useState('')
+    const [mode, setMode] = useState<string>('')
 
     useEffect(() => {
         const mediaQuery = window.matchMedia(preferDarkQuery)
@@ -41,8 +41,8 @@ function UseThemeSwither() {
             document.documentElement.classList.remove('dark')
         }
     }, [mode])
-    
-    return [mode, setMode]
+
+    return [mode, setMode] as const
 }
 
 export default UseThemeSwither;
