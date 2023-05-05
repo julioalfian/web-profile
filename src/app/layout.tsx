@@ -23,10 +23,10 @@ export default function RootLayout({
         </head>
         <body className={`${inter.className} min-h-screen`}>
         <Navbar/>
-        <main className="min-h-screen bg-light relative">
+        <main className="min-h-screen bg-light dark:bg-dark relative">
             <div className={'w-full px-32 flex'}>
                 <NavbarSosmed/>
-                <main className="container mx-auto">
+                <main className="container mx-auto py-10">
                     {children}
                 </main>
             </div>

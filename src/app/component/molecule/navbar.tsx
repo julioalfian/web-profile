@@ -4,7 +4,6 @@ import {useEffect, useState} from "react";
 import Logo from "@/app/component/atom/logo";
 import CustomLink from "@/app/component/atom/custom-link";
 
-
 export interface INavbar {
     title: string,
     link: string
@@ -25,9 +24,9 @@ export default function Navbar() {
         ])
     }, [])
     return (
-        <header className={'w-full px-32 py-8 flex justify-between items-center font-medium bg-light'}>
+        <header className={'w-full px-32 py-8 flex justify-between items-center font-medium bg-light dark:bg-dark'}>
             <Logo/>
-            <nav>
+            <nav className={'flex'}>
                 {
                     navItem.map(item => {
                         return (
@@ -37,6 +36,7 @@ export default function Navbar() {
                         )
                     })
                 }
+
             </nav>
         </header>
     )

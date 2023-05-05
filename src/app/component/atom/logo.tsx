@@ -8,10 +8,10 @@ function Logo() {
     return (
         <div className={'flex justify-center items-center '}>
             <MotionLink href={'/'}
-                        className={'w-16 h-16 flex justify-center items-center bg-dark text-light rounded-full text-2xl font-bold'}
+                        className={'w-16 h-16 flex justify-center items-center bg-dark text-light rounded-full text-2xl font-bold border border-solid border-transparent dark:border-light dark:bg-transparent'}
                         whileHover={{
                             backgroundColor: ["#121212", "rgba(131,58,180,1)", "rgba(253,29,29,1)", "rgba(252,176,69,1)", "rgba(131,58,180,1)", "#121212"],
-                            transition: {duration: 1, repeat: Infinity}
+                            transition: {duration: 5, repeat: Infinity}
                         }}>
                 JA
                 {/*<Image*/}

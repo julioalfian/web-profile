@@ -4,6 +4,9 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import {motion} from "framer-motion";
+import WbSunnyIcon from "@mui/icons-material/WbSunny";
+import DarkModeIcon from "@mui/icons-material/DarkMode";
+import useThemeSwither from "@/app/component/hooks/useThemeSwither";
 
 
 export interface ISosmed {
@@ -13,6 +16,7 @@ export interface ISosmed {
 
 function NavbarSosmed() {
     const [sosmed, setSosmed] = useState<ISosmed[]>([])
+    const [mode, setMode] = useThemeSwither()
     useEffect(() => {
         setSosmed([
             {
@@ -29,8 +33,11 @@ function NavbarSosmed() {
             }
         ])
     }, [])
+    // @ts-ignore
+    // @ts-ignore
+    // @ts-ignore
     return (
-        <nav className={'h-full min-h-screen flex flex-col justify-center'}>
+        <nav className={'h-full min-h-screen flex flex-col justify-center pr-8'}>
             {
                 sosmed.map(item => {
                     return (
@@ -46,6 +53,14 @@ function NavbarSosmed() {
                     )
                 })
             }
+            <button onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}
+                    className={'flex items-center justify-center rounder-full my-4'}>
+                {
+                    mode === 'dark' ?
+                        <WbSunnyIcon color={'secondary'} className={'animate-spin-slow'}/> :
+                        <DarkModeIcon color={'secondary'}/>
+                }
+            </button>
         </nav>
     );
 }

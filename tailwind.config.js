@@ -5,6 +5,7 @@ module.exports = {
         './src/components/**/*.{js,ts,jsx,tsx,mdx}',
         './src/app/**/*.{js,ts,jsx,tsx,mdx}',
     ],
+    darkMode: 'class',
     theme: {
         extend: {
             backgroundImage: {
@@ -17,6 +18,8 @@ module.exports = {
                 light: "#f5f5f5",
                 primary: "#B63E96", // 240,86,199
                 primaryDark: "#58E6D9", // 80,230,217
+                darkGray: "#404258",
+                lightGray: "#6B728E"
             },
             animation: {
                 'spin-slow': 'spin 4s linear infinite',
