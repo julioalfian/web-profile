@@ -20,7 +20,7 @@ export default function Home() {
                            className={'hidden dark:block'}/>
                 </div>
                 <div className={'w-1/2 flex flex-col items-center self-center'}>
-                    <h2 className={'font-medium text-2xl !text-left w-full dark:text-primary'}>Hii, I`m</h2>
+                    <h2 className={'font-medium text-2xl !text-left w-full dark:text-primary'}>Hii, I&apos;m</h2>
                     <AnimationText text={'Julio Alfian'}
                                    className={'text-6xl !text-left text-primary'}/>
                     <AnimationText text={'Dwicahya'}
