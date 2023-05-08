@@ -21,21 +21,19 @@ function NavbarSosmed() {
         setSosmed([
             {
                 component: <InstagramIcon color={'secondary'}/>,
-                href: '/'
+                href: 'https://instagram.com/julioalfian/'
             },
             {
                 component: <LinkedInIcon color={'secondary'}/>,
-                href: '/'
+                href: 'https://linkedin.com/in/julioalfian'
             },
             {
                 component: <GitHubIcon color={'secondary'}/>,
-                href: '/'
+                href: 'https://github.com/julioalfian'
             }
         ])
     }, [])
-    // @ts-ignore
-    // @ts-ignore
-    // @ts-ignore
+    
     return (
         <nav className={'h-full min-h-screen flex flex-col justify-center pr-8'}>
             {

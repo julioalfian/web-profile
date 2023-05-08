@@ -2,6 +2,7 @@
 import AnimationText from "@/app/component/atom/animation-text";
 import {useEffect, useState} from "react";
 import ProjectCard, {IProjectCard} from "@/app/component/molecule/project-card";
+import TransitionEffect from "@/app/component/atom/transition-effect";
 
 export default function Page() {
     const [dataProject, setDataProject] = useState<IProjectCard[]>([])
@@ -42,23 +43,26 @@ export default function Page() {
         ])
     }, [])
     return (
-        <div className={'container mx-auto'}>
-            <div className={'w-1/2 mx-auto'}>
-                <AnimationText text={'Latest Projects'}
-                               className={'text-6xl !text-center'}/>
+        <>
+            <TransitionEffect/>
+            <div className={'container mx-auto'}>
+                <div className={'w-1/2 mx-auto'}>
+                    <AnimationText text={'Latest Projects'}
+                                   className={'text-6xl !text-center'}/>
+                </div>
+                <article className={'columns-2 relative py-8 mt-20'}>
+                    {
+                        dataProject.map(item => {
+                            return (
+                                <div className={'w-full mb-16 px-4'} key={item.title}>
+                                    <ProjectCard title={item.title} description={item.description} link={item.link}
+                                                 image={item.image} type={item.type} year={item.year}/>
+                                </div>
+                            )
+                        })
+                    }
+                </article>
             </div>
-            <article className={'columns-2 relative py-8 mt-20'}>
-                {
-                    dataProject.map(item => {
-                        return (
-                            <div className={'w-full mb-16 px-4'} key={item.title}>
-                                <ProjectCard title={item.title} description={item.description} link={item.link}
-                                             image={item.image} type={item.type} year={item.year}/>
-                            </div>
-                        )
-                    })
-                }
-            </article>
-        </div>
+        </>
     )
 }
