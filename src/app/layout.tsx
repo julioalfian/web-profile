@@ -4,7 +4,6 @@ import Navbar from "@/app/component/molecule/navbar";
 import NavbarSosmed from "@/app/component/molecule/navbar-sosmed";
 import Footer from "@/app/component/molecule/footer";
 import Head from "@/app/component/molecule/head";
-import Template from "@/app/template";
 
 const inter = Inter({subsets: ['latin']})
 
@@ -23,9 +22,7 @@ export default function RootLayout({
             <div className={'w-full px-32 flex'}>
                 <NavbarSosmed/>
                 <main className={'container mx-auto py-10'}>
-                    <Template>
-                        {children}
-                    </Template>
+                    {children}
                 </main>
             </div>
         </main>
