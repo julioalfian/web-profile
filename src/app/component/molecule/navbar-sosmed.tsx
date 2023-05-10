@@ -33,9 +33,9 @@ function NavbarSosmed() {
             }
         ])
     }, [])
-    
+
     return (
-        <nav className={'h-full min-h-screen flex flex-col justify-center pr-8'}>
+        <nav className={'h-full flex flex-col justify-center pr-8 ml-0 lg:-ml-16'}>
             {
                 sosmed.map(item => {
                     return (

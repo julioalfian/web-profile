@@ -46,11 +46,11 @@ export default function Page() {
         <>
             <TransitionEffect/>
             <div className={'container mx-auto'}>
-                <div className={'w-1/2 mx-auto'}>
+                <div className={'w-full lg:w-1/2 mx-auto'}>
                     <AnimationText text={'Latest Projects'}
-                                   className={'text-6xl !text-center'}/>
+                                   className={'text-4xl lg:text-6xl !text-center'}/>
                 </div>
-                <article className={'columns-2 relative py-8 mt-20'}>
+                <article className={'columns-1 lg:columns-2 relative py-8 mt-20'}>
                     {
                         dataProject.map(item => {
                             return (

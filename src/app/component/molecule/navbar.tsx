@@ -1,6 +1,5 @@
 'use client';
 import React from 'react';
-import {useEffect, useState} from "react";
 import Logo from "@/app/component/atom/logo";
 import CustomLink from "@/app/component/atom/custom-link";
 
@@ -9,24 +8,23 @@ export interface INavbar {
     link: string
 }
 
+export const navItem: INavbar[] = [
+    {
+        title: 'Home',
+        link: '/'
+    },
+    {
+        title: 'Project',
+        link: '/project'
+    }
+]
+
 export default function Navbar() {
-    const [navItem, setNavItem] = useState<INavbar[]>([])
-    useEffect(() => {
-        setNavItem([
-            {
-                title: 'Home',
-                link: '/'
-            },
-            {
-                title: 'Project',
-                link: '/project'
-            }
-        ])
-    }, [])
     return (
-        <header className={'w-full px-32 py-8 flex justify-between items-center font-medium bg-light dark:bg-dark'}>
+        <header
+            className={'w-full px-6 lg:px-32 py-8 flex justify-between items-center font-medium bg-light dark:bg-dark'}>
             <Logo/>
-            <nav className={'flex'}>
+            <nav className={'hidden lg:flex'}>
                 {
                     navItem.map(item => {
                         return (
@@ -36,7 +34,6 @@ export default function Navbar() {
                         )
                     })
                 }
-
             </nav>
         </header>
     )
