@@ -37,7 +37,7 @@ export default function Home() {
                 </div>
                 <div className={'w-full lg:w-1/2 flex flex-col items-center self-center'}>
                     <h2 data-aos="fade-down"
-                        data-aos-offset="100"
+                        data-aos-offset="20"
                         data-aos-delay="2100"
                         data-aos-duration="1000"
                         className={'font-medium text-xl lg:text-2xl !text-left w-full dark:text-primary'}>Hii,

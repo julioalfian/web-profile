@@ -37,7 +37,7 @@ const singleWord = {
 function AnimationText(Iprops: IAnimationText) {
     return (
         <div data-aos="fade-left"
-             data-aos-offset="200"
+             data-aos-offset="20"
              data-aos-delay="2100"
              data-aos-duration="1000"
              className={'w-full mx-auto py-2 flex items-center justify-center text-center overflow-hidden'}>
