@@ -1,6 +1,6 @@
 'use client'
 import React, {useEffect, useRef, useState} from 'react';
-import {motion, useCycle} from "framer-motion";
+import {motion} from "framer-motion";
 import useDimensions from "@/app/component/hooks/useDimensions";
 import MenuToggle from "@/app/component/atom/menu-toggle";
 import Navigation from "@/app/component/molecule/navigation";
