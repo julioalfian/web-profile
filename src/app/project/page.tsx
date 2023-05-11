@@ -54,7 +54,7 @@ export default function Page() {
                     {
                         dataProject.map(item => {
                             return (
-                                <div className={'w-full mb-16 px-4'} key={item.title}>
+                                <div className={'w-full mb-16 px-8'} key={item.title}>
                                     <ProjectCard title={item.title} description={item.description} link={item.link}
                                                  image={item.image} type={item.type} year={item.year}/>
                                 </div>

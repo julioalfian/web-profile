@@ -35,7 +35,10 @@ function NavbarSosmed() {
     }, [])
 
     return (
-        <nav className={'h-full flex flex-col justify-center pr-8 ml-0 lg:-ml-16'}>
+        <nav data-aos="fade-left"
+             data-aos-offset="100"
+             data-aos-delay="2100"
+             data-aos-duration="1000" className={'h-full flex flex-col justify-center pr-8 ml-0 lg:-ml-16'}>
             {
                 sosmed.map(item => {
                     return (
@@ -56,7 +59,7 @@ function NavbarSosmed() {
                 {
                     mode === 'dark' ?
                         <WbSunnyIcon color={'secondary'} className={'animate-spin-slow'}/> :
-                        <DarkModeIcon color={'secondary'}/>
+                        <DarkModeIcon color={'secondary'} className={'animate-spin-slow'}/>
                 }
             </button>
         </nav>

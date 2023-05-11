@@ -15,7 +15,7 @@ const quote = {
         opacity: 1,
         transition: {
             delay: 2,
-            staggerChildren: 0.08
+            staggerChildren: 0.3
         }
     }
 }
@@ -36,7 +36,11 @@ const singleWord = {
 
 function AnimationText(Iprops: IAnimationText) {
     return (
-        <div className={'w-full mx-auto py-2 flex items-center justify-center text-center overflow-hidden'}>
+        <div data-aos="fade-left"
+             data-aos-offset="200"
+             data-aos-delay="2100"
+             data-aos-duration="1000"
+             className={'w-full mx-auto py-2 flex items-center justify-center text-center overflow-hidden'}>
             <motion.h1
                 className={`inline-block w-full text-dark dark:text-light font-bold capitalize ${Iprops.className}`}
                 variants={quote}
