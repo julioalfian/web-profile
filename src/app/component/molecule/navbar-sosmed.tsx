@@ -3,13 +3,13 @@ import React, {useEffect, useState} from 'react';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import {motion} from "framer-motion";
 import WbSunnyIcon from "@mui/icons-material/WbSunny";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 import useThemeSwither from "@/app/component/hooks/useThemeSwither";
 
 
 export interface ISosmed {
+    title: string,
     component: any,
     href: string
 }
@@ -20,14 +20,17 @@ function NavbarSosmed() {
     useEffect(() => {
         setSosmed([
             {
+                title: 'Instagram',
                 component: <InstagramIcon color={'secondary'}/>,
                 href: 'https://instagram.com/julioalfian/'
             },
             {
+                title: 'LinkedIn',
                 component: <LinkedInIcon color={'secondary'}/>,
                 href: 'https://linkedin.com/in/julioalfian'
             },
             {
+                title: 'Github',
                 component: <GitHubIcon color={'secondary'}/>,
                 href: 'https://github.com/julioalfian'
             }
@@ -42,15 +45,15 @@ function NavbarSosmed() {
             {
                 sosmed.map(item => {
                     return (
-                        <motion.a href={item.href}
-                                  target={"_blank"}
-                                  key={item.href}
-                                  className={'w-6 my-4'}
-                                  whileHover={{x: 5, scale: 1.1}}
-                                  whileTap={{scale: 0.8}}
+                        <a href={item.href}
+                           target={"_blank"}
+                           key={item.href}
+                           className={'group flex w-6 my-4 cursor-pointer'}
                         >
+                            <span
+                                className={'text-primary -translate-x-10 group-hover:mr-1 opacity-0 w-0 group-hover:opacity-100 group-hover:w-fit group-hover:translate-x-0 transition duration-300 ease-in-out'}>{item.title}</span>
                             {item.component}
-                        </motion.a>
+                        </a>
                     )
                 })
             }

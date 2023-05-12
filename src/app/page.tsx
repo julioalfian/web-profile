@@ -17,7 +17,7 @@ export default function Home() {
                 className={'flex justify-between items-center text-dark w-full h-full h-auto lg:min-h-screen flex-wrap'}>
                 <div className={'w-full lg:w-1/2 mb-8 lg:mb-0 flex justify-start items-center'}>
                     <NavbarSosmed/>
-                    <div data-aos="zoom-in-right"
+                    <div data-aos="zoom-in-left"
                          data-aos-offset="200"
                          data-aos-delay="2000"
                          data-aos-duration="1000"
@@ -63,7 +63,7 @@ export default function Home() {
                              data-aos-delay="3000"
                              data-aos-duration="1000">
                             <Link
-                                href={'/file/CV2023.pdf'}
+                                href={'https://drive.google.com/file/d/1Duuhf-V95-Oy8GKZpW3xUwsS7J6RUj5v/view?usp=share_link'}
                                 target={'_blank'}
                                 className={'flex items-center bg-dark text-light p-2 lg:p-2.5 px-4 lg:px-6 rounded-lg text-sm lg:text-lg font-semibold ' +
                                     'hover:bg-light hover:text-dark border-2 boder-solid border-transparent hover:border-dark dark:border-light dark:bg-light dark:text-dark'}
@@ -71,7 +71,7 @@ export default function Home() {
                             >Resume <CloudDownloadIcon className={'ml-2'}/></Link>
                         </div>
                         <div data-aos="fade-down-left"
-                             data-aos-offset="20"
+                             data-aos-offset="10"
                              data-aos-delay="3000"
                              data-aos-duration="1000">
                             <Link
