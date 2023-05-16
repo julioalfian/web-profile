@@ -5,6 +5,12 @@ function UseThemeSwither() {
     const [mode, setMode] = useState<string>('')
 
     useEffect(() => {
+        const userPref: string | null = window.localStorage.getItem('theme')
+        if (userPref)
+            setMode(userPref)
+    }, [])
+
+    useEffect(() => {
         const mediaQuery = window.matchMedia(preferDarkQuery)
         const userPref = window.localStorage.getItem('theme')
 

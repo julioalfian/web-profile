@@ -23,11 +23,11 @@ function ProjectCard(Iprops: IProjectCard) {
                  data-aos-offset="10"
                  data-aos-delay="100"
                  data-aos-duration="1000"
-                 className={'group w-full flex flex-col rounded-2xl bg-light relative shadow-lg shadow-dark-400/40 dark:border dark:border-light dark:border-2 dark:bg-transparent'}>
+                 className={'group w-full flex flex-col rounded-b-xl lg:rounded-b-2xl  bg-light relative shadow-lg shadow-dark-400/40 dark:border dark:border-light dark:border-2 dark:bg-transparent'}>
             <Link href={Iprops.link}>
                 <div className={'overflow-hidden w-full h-full shadow-lg shadow-dark-100/10'}>
                     <Image src={Iprops.image} alt={Iprops.title} width={200} height={200}
-                           className={'w-full rounded-2xl group-hover:scale-105 duration-1000'} priority
+                           className={'w-full group-hover:scale-105 duration-1000'} priority
                            sizes="(max-width: 768px) 100vw,(max-width: 1200px) 50vw,33vw"
                     />
                 </div>

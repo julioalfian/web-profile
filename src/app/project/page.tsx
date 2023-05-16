@@ -22,7 +22,7 @@ export default function Page() {
                 year: '2021',
                 description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac rhoncus dolor, a commodo mauris. Morbi sodales tristique est sed posuere. Aliquam pulvinar commodo velit, ut commodo elit sagittis sed. Phasellus eget interdum ipsum, eu placerat sem. Donec neque erat, rhoncus elementum orci ac, pellentesque interdum ipsum. In nunc velit, pharetra ac ex sed, auctor tincidunt nulla. Vestibulum ut semper erat. In eu finibus ipsum. ',
                 type: 'CMS Website',
-                image: '/images/projects/devdreaming.jpg'
+                image: '/images/projects/mtt.jpg'
             },
             {
                 title: 'Maxxi Agri Indonesia',
@@ -30,7 +30,7 @@ export default function Page() {
                 year: '2022',
                 description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac rhoncus dolor, a commodo mauris. Morbi sodales tristique est sed posuere. Aliquam pulvinar commodo velit, ut commodo elit sagittis sed. Phasellus eget interdum ipsum, eu placerat sem. Donec neque erat, rhoncus elementum orci ac, pellentesque interdum ipsum. In nunc velit, pharetra ac ex sed, auctor tincidunt nulla. Vestibulum ut semper erat. In eu finibus ipsum. ',
                 type: 'CMS Website',
-                image: '/images/projects/devdreaming.jpg'
+                image: '/images/projects/mai.jpg'
             },
             {
                 title: 'Ipos International',

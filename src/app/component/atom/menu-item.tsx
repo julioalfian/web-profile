@@ -34,6 +34,7 @@ function MenuItem(props: IMenuItem) {
             variants={variants}
             whileHover={{scale: 1.1}}
             whileTap={{scale: 0.95}}
+            key={props.data.link}
         >
             {/*<div className="icon-placeholder" style={style}></div>*/}
             {/*<div className="text-placeholder dark:text-dark">{props.data.title}</div>*/}
